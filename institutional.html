@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="LS ADVISORS U.S. Equity Market Neutral institutional research overview.">
-<title>Institutional Research | LS ADVISORS</title><link rel="stylesheet" href="style.css">
+<title>Institutional Research | LS ADVISORS</title><link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="site-header"><a class="brand" href="index.html">LS ADVISORS</a><button class="menu" aria-label="Toggle navigation">Menu</button><nav><a href="index.html#research">Research</a><a href="index.html#solutions">Solutions</a><a href="institutional.html">Institutional</a><a href="index.html#contact">Contact</a></nav></header>
@@ -11,18 +11,28 @@
 <section class="hero institutional-hero">
 <div class="eyebrow">FOR INSTITUTIONAL DISCUSSION</div>
 <h1>U.S. Equity<br>Market Neutral</h1>
-<p class="lead">A diversified, sector-neutral U.S. equity long/short framework designed for institutional implementation.</p>
-<div class="specs"><div>NASDAQ EQUITIES</div><div>SECTOR NEUTRAL</div><div>LONG / SHORT 50/50</div><div>DAILY REBALANCING</div></div>
+<p class="lead">A diversified, sector-neutral U.S. equity long/short framework with daily and reduced-turnover implementation options.</p>
+<div class="specs"><div>NASDAQ EQUITIES</div><div>SECTOR NEUTRAL</div><div>LONG / SHORT 50/50</div><div>REBALANCING OPTIONS</div></div>
 </section>
 
 <section class="section">
 <div class="kicker">STRATEGY OVERVIEW</div><h2>Cross-sectional alpha at portfolio scale.</h2>
-<div class="two-col"><p>The strategy applies proprietary cross-sectional alpha research across a liquid Nasdaq equity universe and converts security-level signals into a broad, risk-controlled market-neutral portfolio.</p><p>The proposed production workflow is designed for pre-close calculation and same-session implementation, with outputs available as security-level alpha scores or signed target weights.</p></div>
+<div class="two-col"><p>The strategy applies proprietary cross-sectional alpha research across a liquid Nasdaq equity universe and converts security-level signals into a broad, risk-controlled market-neutral portfolio.</p><p>The research framework supports daily target-weight production and alternative rebalancing schedules. Outputs are available as security-level alpha scores or signed target weights.</p></div>
+</section>
+
+<section class="section">
+<div class="kicker">IMPLEMENTATION VARIANTS</div><h2>One alpha framework. Two rebalancing approaches.</h2>
+<p class="lead">Both implementations use the AlphaCatch proprietary cross-sectional research framework and a sector-neutral, 50/50 long/short portfolio construction approach.</p>
+<div class="cards three" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));">
+  <article><span>01 · DAILY</span><h3>LSA-NASDAQ-LS</h3><p>Target weights rebalanced each trading day to reflect daily cross-sectional signals.</p><small>Focus: signal responsiveness</small></article>
+  <article><span>02 · EVERY THREE TRADING DAYS</span><h3>LSA-NASDAQ-RT-LS</h3><p>Target weights rebalanced every three trading days to reduce trading frequency and turnover.</p><small>Focus: execution efficiency</small></article>
+</div>
+<p class="muted">Reduced turnover is a design objective, not a claim of realized transaction-cost savings or superior performance. The implementations have different OOS histories.</p>
 </section>
 
 <section class="section dark">
 <div class="kicker">PORTFOLIO CONSTRUCTION</div><h2>Designed for institutional implementation.</h2>
-<div class="cards four"><article><h3>Sector Neutral</h3><p>Long/short construction controls broad sector exposure.</p></article><article><h3>Broad Diversification</h3><p>A large cross-section reduces dependence on individual names or isolated events.</p></article><article><h3>Risk Controlled</h3><p>Volatility-aware portfolio construction with explicit single-name constraints.</p></article><article><h3>Daily Production</h3><p>Systematic daily portfolio generation for production workflows.</p></article></div>
+<div class="cards four"><article><h3>Sector Neutral</h3><p>Long/short construction controls broad sector exposure.</p></article><article><h3>Broad Diversification</h3><p>A large cross-section reduces dependence on individual names or isolated events.</p></article><article><h3>Risk Controlled</h3><p>Volatility-aware portfolio construction with explicit single-name constraints.</p></article><article><h3>Flexible Rebalancing</h3><p>Daily signal production with daily or three-trading-day target-weight rebalancing options.</p></article></div>
 </section>
 
 <section class="section">
@@ -31,10 +41,13 @@
 </section>
 
 <section class="section validation-large">
-<div class="kicker">INDEPENDENT OOS VALIDATION</div><h2>Tracked independently since August 24, 2026.</h2>
-<p class="lead">Daily portfolio positions are independently tracked through validityBase and third-party timestamped, creating a verifiable out-of-sample record protected against ex-post modification.</p>
-<p class="muted">Historical strategy results are simulated and do not represent live trading. Independent tracking should not be interpreted as verification of future performance.</p>
-<a class="btn primary" href="https://portfolios.vbase.com/?sym=LSA-NASDAQ-LS" target="_blank" rel="noopener noreferrer">View Independent Track Record ↗</a>
+<div class="kicker">INDEPENDENT OOS VALIDATION</div><h2>Two independently tracked implementations.</h2>
+<p class="lead">Portfolio positions for both implementations are independently timestamped through validityBase, supporting a verifiable out-of-sample record.</p>
+<div class="cards three" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:2rem 0;">
+  <article><span>DAILY REBALANCING</span><h3>LSA-NASDAQ-LS</h3><p>Independent tracking since August 24, 2026.</p><p><a class="btn" href="https://portfolios.vbase.com/?sym=LSA-NASDAQ-LS" target="_blank" rel="noopener noreferrer">View Daily Track Record ↗</a></p></article>
+  <article><span>REDUCED TURNOVER</span><h3>LSA-NASDAQ-RT-LS</h3><p>Separate OOS history beginning in October 2026; shorter observation period.</p><p><a class="btn" href="https://portfolios.vbase.com/?sym=LSA-NASDAQ-RT-LS" target="_blank" rel="noopener noreferrer">View RT Track Record ↗</a></p></article>
+</div>
+<p class="muted">Historical strategy results are simulated and do not represent live trading. Independent tracking verifies the record of submitted positions, not future performance. The two implementations' OOS histories are not directly comparable over unequal periods.</p>
 </section>
 
 <section class="section dark">
@@ -49,4 +62,4 @@
 </section>
 </main>
 <footer>© <span id="year"></span> LS ADVISORS Ltd. <span>Hong Kong</span><span>For discussion and informational purposes only. Nothing on this website constitutes investment advice, an offer, or a solicitation.</span></footer>
-<script src="main.js"></script></body></html>
+<script src="assets/js/main.js"></script></body></html>
